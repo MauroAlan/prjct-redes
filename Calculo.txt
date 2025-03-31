@@ -1,0 +1,39 @@
+    Vendas (10.100.0.0/23):
+
+        Necessidade: 500 hosts futuros
+
+        Cálculo: 2⁹ = 512 endereços (510 úteis)
+
+        Máscara: /23 (255.255.254.0)
+
+    Inovação (10.100.2.0/24):
+
+        Necessidade: 129 hosts futuros
+
+        Cálculo: 2⁸ = 256 endereços (254 úteis)
+
+        Máscara: /24 (255.255.255.0)
+
+    TI (10.100.3.0/25):
+
+        Necessidade: 200 hosts futuros
+
+        Cálculo: 2⁷ = 128 endereços (126 úteis)
+
+        Observação: Apesar da necessidade futura ser 200, foi alocado /25 para economia de espaço, podendo ser reavaliado
+
+    Helpdesk (10.100.3.128/25):
+
+        Mesmo cálculo da VLAN TI
+
+    RH (10.100.4.0/26):
+
+        Necessidade: 100 hosts futuros
+
+        Cálculo: 2⁶ = 64 endereços (62 úteis)
+
+        Observação: Apesar da necessidade futura ser 100, foi alocado /26 para economia de espaço
+
+    Gerência (10.100.4.64/26):
+
+        Mesmo cálculo da VLAN RH
